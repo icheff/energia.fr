@@ -6,7 +6,7 @@ async function addTemplate(url, from, to, position) {
 
         // Comprobar si el contenido HTML está vacío
         if (!html.trim()) {
-            // console.warn('External HTML content is empty:', url);
+            console.warn('External HTML content is empty:', url);
             return;
         }
 
@@ -14,8 +14,8 @@ async function addTemplate(url, from, to, position) {
         tempElement.innerHTML = html;
         const sectionElement = tempElement.querySelector(from);
 
-        if (!sectionElement) {
-            console.error(`Element not found with selector: ${from}`);
+        if (!sectionElement || !sectionElement.innerHTML.trim()) {
+            console.warn(`Template content is empty for selector: ${from}`);
             return;
         }
 
@@ -54,6 +54,8 @@ function getBasePath() {
 }
 
 const basePath = getBasePath();
+
+// Estas líneas intentarán cargar las plantillas, pero si están vacías, no se agregarán al DOM
 addTemplate(`${basePath}/header/index.html`, '.header', '.page', 'top');
 addTemplate(`${basePath}/footer/index.html`, '.footer', '.page', 'bottom');
 addTemplate(`${basePath}/sidebar/index.html`, '.sidebar', '.page', 'bottom');
