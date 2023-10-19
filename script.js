@@ -6,7 +6,7 @@ async function addTemplate(url, from, to, position) {
 
         // Comprobar si el contenido HTML está vacío
         if (!html.trim()) {
-            console.warn('External HTML content is empty:', url);
+            //console.warn('External HTML content is empty:', url);
             return;
         }
 
