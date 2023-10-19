@@ -1,4 +1,0 @@
-{
-  "pageId": "mIDyuEWcvR",
-  "pageHtml": "<section id=\"jRUGrrH\" data-type=\"section\"><style id=\"UFvNSSG\" type=\"text/css\">@media screen and (min-width:0px){#jRUGrrH{width:100vw;height:100vh;position:relative}}@media screen and (min-width:0px){#kNgoMTX{width:300px;height:100px;position:absolute;top:15px;left:15px}}</style><picture id=\"tNeqoev\"><source srcset=\"\" media=\"(max-width:640px)\"><source srcset=\"\" media=\"(min-width:641px) and (max-width:768px)\"><source srcset=\"\" media=\"(min-width:769px) and (max-width:1024px)\"><source srcset=\"\" media=\"(min-width:1025px) and (max-width:1280px)\"><source srcset=\"\" media=\"(min-width:1281px)\">        <img id=\"kNgoMTX\" src=\"https://raw.githubusercontent.com/icheff/energia.fr/main/media/images/logo-white1.svg\" data-type=\"img-bg\" loading=\"lazy\"></picture><button class=\"toolbar-open\" onclick=\"toolsOpenModal(this);\"><img src=\"./assets/svg/icons/settings.svg\"></button></section>"
-}
